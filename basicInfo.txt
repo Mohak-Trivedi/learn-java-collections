@@ -1,0 +1,10 @@
+Java Collections Framework consists of:
+1. Collection Interface:
+1.1 List Interface: Classes for contiguous storage data structures
+1.2 Set Interface: Classes for unique value storage data structures
+1.2 Queue Interface: Classes for priority-based linear storage data structures
+2. Map Interface
+3. Iterator Interface
+
+Use:
+import java.util.*;
