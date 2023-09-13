@@ -12,7 +12,7 @@ public class LearnArrayList {
         List<Integer> list = new ArrayList<>();
 
         ////////////////////////////
-        // Adding elements in the List:
+        // Adding elements in the List: O(n)
 
         // add(element) adds element to the end of arraylist.
         list.add(1);
@@ -39,7 +39,7 @@ public class LearnArrayList {
         //////////////////////////////
 
         //////////////////////////////
-        // Removal:
+        // Removal: O(n)
 
         // remove(index) removes element at index in arraylist.
         list.remove(1);
@@ -56,7 +56,50 @@ public class LearnArrayList {
 
         ///////////////////////////////
 
-        ///////////////////////////////
+        list.add(100);
+        list.add(200);
+        list.add(300);
+        list.add(400);
 
+        ///////////////////////////////
+        // Updating/Setting: O(1)
+
+        // set(index, element) sets element at index in arraylist
+        list.set(2, 373);
+        System.out.println(list);
+
+        //////////////////////////////
+
+        //////////////////////////////
+        // Check presence: O(n)
+
+        // contains(element) returns true if element present in arraylist, else false.
+        System.out.println(list.contains(200));
+        System.out.println(list.contains(500));
+
+        //////////////////////////////
+
+        //////////////////////////////
+        // Iteration
+
+        // for loop
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i));
+        }
+        System.out.println();
+
+        // for each loop: RECOMMENDED METHOD as it is convenient
+        for (Integer element : list) {
+            System.out.print(element);
+        }
+        System.out.println();
+
+        // iterator
+        Iterator<Integer> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next());
+        }
+        System.out.println();
+        //////////////////////////////
     }
 }
