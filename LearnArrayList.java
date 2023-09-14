@@ -12,7 +12,7 @@ public class LearnArrayList {
         List<Integer> list = new ArrayList<>();
 
         ////////////////////////////
-        // Adding elements in the List: O(n)
+        // End Insertion: adding elements in the List: O(n)
 
         // add(element) adds element to the end of arraylist.
         list.add(1);
@@ -62,7 +62,7 @@ public class LearnArrayList {
         list.add(400);
 
         ///////////////////////////////
-        // Updating/Setting: O(1)
+        // Updating/Insertion: O(1)
 
         // set(index, element) sets element at index in arraylist
         list.set(2, 373);
