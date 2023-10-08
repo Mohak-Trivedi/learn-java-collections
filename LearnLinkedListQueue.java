@@ -34,7 +34,7 @@ public class LearnLinkedListQueue {
     ///////////////////////
 
     ///////////////////////
-    // VIEW the front element of Queue
+    // VIEW the front element of Queue: O(1)
 
     // peek() returns the element present at the front of the Queue.
     System.out.println(queue.peek());
