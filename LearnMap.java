@@ -1,9 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class LearnMap {
     public static void main(String[] args) {
         Map<String, Integer> numbers = new HashMap<>();
+        // Map<String, Integer> numbers = new TreeMap<>(); // key-value pairs are stored
+        // in sorted order based on the key value
 
         /////////////////////////
         // Insertion: O(1)
@@ -17,6 +20,15 @@ public class LearnMap {
 
         // numbers.put("Two", 23); // Keys are unique so for the same key the value will
         // be updated.
+
+        System.out.println(numbers);
+        /////////////////////////
+
+        /////////////////////////
+        // Removal: O(1)
+
+        // remove(key): removes the key-value pair having the mentioned key.
+        numbers.remove("Three");
 
         System.out.println(numbers);
         /////////////////////////
